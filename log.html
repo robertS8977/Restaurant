@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - My Blog</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('background_image.jpg'); /* Specify the path to your image */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      font-family: Arial, sans-serif;
+    }
+
+    .login-form {
+      max-width: 300px;
+      margin: 0 auto;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.8); /* Add background color with opacity */
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .login-form label {
+      color: #3498db;
+    }
+
+    .login-form input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    .login-form button {
+      background-color: #3498db;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      margin-top: 16px;
+      cursor: pointer;
+    }
+
+    .login-form button:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="w3-container w3-blue">
+      <h1>My Blog</h1>
+    </div>
+  </header>
+
+  <div class="login-form">
+    <h2>Login</h2>
+    <form onsubmit="return signIn()">
+      <label for="login-username">Username:</label>
+      <input type="text" id="login-username" required>
+      <label for="login-password">Password:</label>
+      <input type="password" id="login-password" required>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <script>
+  function signIn() {
+    const username = document.getElementById('login-username').value;
+    const password = document.getElementById('login-password').value;
+
+    // Allow anyone to log in, regardless of the username or password
+    localStorage.setItem('username', username); // Store the username in local storage
+    window.location.href = 'create_post.html'; // Redirect to create post
+
+    return false; // Prevent form submission
+  }
+  </script>
+</body>
+</html>

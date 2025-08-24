@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <title>Contact Us - Gofood goGood</title>
+</head>
+<body>
+    <input type="checkbox" id="cart">
+    <label for="cart" class="label-cart"><span class="fa-solid fa-cart-shopping"></span></label>
+
+    <h1 class="logo">Gofood goGood</h1>
+
+    <div class="sidebar">
+        <div class="sidebar-menu">
+            <span class="fas fa-search"></span><br>
+            <a href="search.html"><b>Search</b></a>
+        </div>  
+        <div class="sidebar-menu">
+            <span class="fas fa-home"></span><br>
+            <a href="index.html"><b>Home</b></a>
+        </div> 
+        <div class="sidebar-menu">
+            <span class="fa-solid fa-utensils"></span><br>
+            <a href="restaurent.html"><b>Restaurants</b></a>
+        </div>    
+        <div class="sidebar-menu">
+            <span class="fa-regular fa-address-card"></span><br>
+            <a href="aboutus.html"><b>About Us</b></a>
+        </div>    
+        <div class="sidebar-menu">
+            <span class="fa-solid fa-address-book"></span><br>
+            <a href="contact.html"><b>Contact</b></a>
+        </div> 
+        <div class="sidebar-menu">
+            <span class="fas fa-user"></span><br>
+            <a href="kfc.html"><b>Profile</b></a>
+        </div> 
+        <div class="sidebar-menu">
+            <span class="fas fa-sliders-h"></span><br>
+            <a href="#"><b>Setting</b></a>
+        </div>           
+    </div>
+    <div class="contact-container">
+        <h2>Contact Us</h2><br><br>
+        <div class="contact-info">
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <h3>Phone</h3>
+                <p>+91 123 456 7890</p>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <h3>Email</h3>
+                <p>support@gofoodgogood.com</p>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Address</h3>
+                <p>123 Main Street, Imphal, Manipur</p>
+            </div>
+        </div>
+        <form class="contact-form">
+            <h3>Send us a message</h3>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <footer>
+        <p>Copyright ©2024 Food Delivery</p>
+    </footer>
+</body>
+</html>
