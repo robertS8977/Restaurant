@@ -1,0 +1,29 @@
+:root {
+    --mainColor: #f6f8fa;
+    --darkBlack: #2d2f31;
+    --darkGrey: #61666b;
+    --grey: #d5d5d5;
+    --lightGrey: #f2f2f2;
+    --yellow: #fecb40;
+    --red: #df113c;
+    --orange: #ffa500;
+    --blue: #00008b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Inter", sans-serif;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    color: var(--darkBlack);
+    object-fit: cover;
+}

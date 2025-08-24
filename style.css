@@ -1,0 +1,392 @@
+:root {
+    --mainColor: #f6f8fa;
+    --darkBlack: #2d2f31;
+    --darkGrey: #61666b;
+    --grey: #d5d5d5;
+    --lightGrey: #f2f2f2;
+    --yellow: #fecb40;
+    --red: #df113c;
+    --orange: #ffa500;
+    --blue: #00008b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Inter", sans-serif;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    color: var(--darkBlack);
+}
+
+p {
+    font-size: 14px;
+}
+
+.label-cart {
+    position: fixed;
+    top: 15px;
+    right: 10px;
+    z-index: 4;
+    cursor: pointer;
+    font-size: xx-large;
+}
+
+.dashboard-banner img {
+    width: 100%;
+}
+
+.logo {
+    position: fixed;
+    background-color: var(--orange);
+    color: var(--lightGrey);
+    width: 100%;
+    text-align: center;
+    padding: 15px 420px 15px 60px;
+    top: 0;
+    z-index: 2;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 100%;
+    background-color: var(--mainColor);
+    z-index: 1;
+    padding-top: 70px;
+}
+
+.sidebar-menu {
+    width: 100%;
+    text-align: center;
+    padding: 10px 5px;
+    color: var(--darkGrey);
+
+}
+
+.sidebar-menu >  a{
+    text-decoration: none;
+    font-size: 0.7rem;
+    line-height: 1.5;
+    color: var(--darkGrey);
+}
+.sidebar-menu a:hover {
+    border-right: 2px solid var(--red);
+    color: var(--red);
+}
+
+.dasboard {
+    height: 100%;
+    width: 100%;
+    padding-right: 360px;
+    padding-left: 60px;
+    position: absolute;
+}
+
+.dasboard-banner {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    margin-top: 4rem;
+    padding-top: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.dasboard-banner>img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 30px;
+}
+
+.banner-promo {
+    position: absolute;
+    color: var(--darkBlack);
+    top: 25%;
+    left: 10%;
+    font-weight: 800;
+}
+
+.banner-promo>h1>span {
+    color: var(--darkBlack);
+    font-size: 50px;
+    top: 50%;
+}
+
+.banner-promo>h2 {
+    color: #ffa500;
+    font-size: 40px;
+    top: 60%;
+}
+
+.banner-promo>p {
+    color: var(--darkBlack);
+    font-weight: bold;
+    font-size: 40px;
+}
+
+main-text p {
+    color: #050a18;
+    font-size: 30px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.main-btn {
+    display: inline-block;
+    color: #111;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 2px solid #111;
+    padding: 12px 25px;
+    transition: all .42s ease;
+}
+
+.main-btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.main-btn i {
+    vertical-align: middle;
+}
+
+.dashboard-title {
+    padding: 0 5rem;
+}
+
+.dashboard-menu {
+    display: flex;
+    gap: 10px;
+    padding: 0.3rem 5rem;
+    overflow-x: auto;
+}
+
+.dashboard-menu>a {
+    text-decoration: none;
+    text-align: center;
+    border-radius: 20px;
+    min-width: 120px;
+    padding: 0.5rem 0;
+    font-size: 0.9rem;
+    color: var(--darkBlack);
+    background-color: var(--lightGrey);
+}
+
+.dashboard-menu a:hover {
+    background-color: red;
+    color: var(--lightGrey);
+}
+
+.dashboard-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 0.5rem 6rem 6rem 6rem;
+}
+
+.dashboard-card {
+    background-color: var(--mainColor);
+    box-shadow: rgb(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.dashboard-card:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.card-detail {
+    padding: 10px;
+}
+
+.card-detail>h4>span {
+    float: right;
+}
+
+.class-time {
+    color: var(--darkGrey);
+    font-size: 0.8rem;
+    padding-top: 10px;
+}
+
+.dashboard-order {
+    width: 340px;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 0.5rem 1.5rem;
+    background-color: white;
+    z-index: 3;
+}
+
+.dashboard-order h3 {
+    padding: 10px 0;
+}
+
+.order-address h4 {
+    line-height: 2;
+}
+
+.order-time {
+    font-size: 0.8rem;
+    color: var(--darkGrey);
+}
+
+.order-wrapper {
+    height: 180px;
+    width: 100%;
+    overflow-y: scroll;
+    margin: 20px 0;
+}
+
+.order-wrapper::-webkit-scrollbar {
+    width: 7px;
+}
+
+.order-wrapper::-webkit-scrollbar-track {
+    background-color: var(--lightGrey);
+    border-radius: 20px;
+}
+
+.order-wrapper::-webkit-scrollbar-thumb {
+    background-color: var(--darkGrey);
+    border-radius: 20px;
+}
+
+.order-card {
+    display: grid;
+    grid-template-columns: 0.6fr 1fr 0.5fr;
+    padding: 10px 0;
+    gap: 5px;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.order-image {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.order-detail input {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border: 2px solid grey;
+    border-radius: 10px;
+    background-color: transparent;
+    margin-left: 10px;
+}
+
+.divider {
+    width: 100%;
+    border: 1px dashed grey;
+}
+
+.order-total p {
+    padding: 10px 0;
+}
+
+.order-total p span {
+    float: right;
+    font-weight: 600;
+}
+
+.order-promo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightgray;
+    border: 2px solid var(--grey);
+    border-radius: 10px;
+    height: 45px;
+    padding: 0 5px;
+    margin: 5px 0 10px 0;
+}
+
+.input-pormo {
+    height: 100%;
+    background-color: transparent;
+    border: none;
+}
+
+.button-promo {
+    float: right;
+    background-color: var(--yellow);
+    border: none;
+    border-radius: 5px;
+    height: 80%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.checkout {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    background-color: red;
+    border: none;
+    border-radius: 20px;
+    color: var(--lightgrey);
+    cursor: pointer;
+}
+
+.checkout:hover {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#cart {
+    display: none;
+
+}
+
+#cart:checked~.label-cart {
+    color: var(--darkBlack);
+}
+
+#cart:checked~.dashboard {
+    padding-right: 10px;
+
+}
+
+#cart:checked~.dashboard-order {
+    display: none;
+}
+
+#cart:checked~.logo {
+    padding-right: 4px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--mainColor);
+    color:var(--darkBlack);
+    position: static;
+    bottom: 0;
+    width: 100%;
+}

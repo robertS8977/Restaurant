@@ -1,0 +1,187 @@
+:root {
+    --mainColor: #f6f8fa;
+    --darkBlack: #2d2f31;
+    --darkGrey: #61666b;
+    --grey: #d5d5d5;
+    --lightGrey: #f2f2f2;
+    --yellow: #fecb40;
+    --red: #df113c;
+    --orange: #ffa500;
+    --blue: #00008b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Inter", sans-serif;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+}
+body {
+    width: 100%;
+    height: auto;
+    color: var(--darkBlack);
+}
+
+.label-cart {
+    position: fixed;
+    top: 15px;
+    right: 10px;
+    z-index: 4;
+    cursor: pointer;
+    font-size: xx-large;
+}
+.logo {
+    position: fixed;
+    background-color: var(--orange);
+    color: var(--lightGrey);
+    width: 100%;
+    text-align: center;
+    padding: 15px 420px 15px 60px;
+    top: 0;
+    z-index: 2;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 100%;
+    background-color: var(--mainColor);
+    z-index: 1;
+    padding-top: 70px;
+}
+
+.sidebar-menu {
+    width: 100%;
+    text-align: center;
+    padding: 10px 5px;
+    color: var(--darkGrey);
+
+}
+
+.sidebar-menu >  a{
+    text-decoration: none;
+    font-size: 0.7rem;
+    line-height: 1.5;
+    color: var(--darkGrey);
+}
+.sidebar-menu a:hover {
+    border-right: 2px solid var(--red);
+    color: var(--red);
+}
+
+.contact-container {
+    margin-left: 220px;
+    padding: 50px;
+    flex-grow: 1;
+    top: 10%;
+    margin-top: 5%;
+}
+
+.contact-container h2 {
+    text-align: center;
+    color: var(--darkBlack);
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.contact-item {
+    background:var(--lightGrey);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 30%;
+}
+
+.contact-item i {
+    font-size: 2em;
+    color: var(--red);
+    margin-bottom: 10px;
+}
+
+.contact-item h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact-item p {
+    color: #666;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-form h3 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: var(--red);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #ff3f31;
+}
+
+#cart {
+    display: none;
+
+}
+
+#cart:checked~.label-cart {
+    color: var(--darkBlack);
+}
+
+
+#cart:checked~.logo {
+    padding-right: 4px;
+}
+
+footer {
+    background-color: var(--lightGrey);
+    color:var(--darkBlack);
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}

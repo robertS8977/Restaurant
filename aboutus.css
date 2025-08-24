@@ -1,0 +1,160 @@
+:root {
+    --mainColor: #f6f8fa;
+    --darkBlack: #2d2f31;
+    --darkGrey: #61666b;
+    --grey: #d5d5d5;
+    --lightGrey: #f2f2f2;
+    --yellow: #fecb40;
+    --red: #df113c;
+    --orange: #ffa500;
+    --blue: #00008b;
+}   
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Inter", sans-serif;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    color: var(--darkBlack);
+    background-color: var(--lightGrey);
+}
+
+p {
+    font-size: 14px;
+}
+
+.label-cart {
+    position: fixed;
+    top: 15px;
+    right: 10px;
+    z-index: 4;
+    cursor: pointer;
+    font-size: xx-large;
+}
+
+.logo {
+    position: fixed;
+    background-color: var(--orange);
+    color: var(--lightGrey);
+    width: 100%;
+    text-align: center;
+    padding: 15px 420px 15px 60px;
+    top: 0;
+    z-index: 2;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 100%;
+    background-color: var(--mainColor);
+    z-index: 1;
+    padding-top: 70px;
+}
+
+.sidebar-menu {
+    width: 100%;
+    text-align: center;
+    padding: 10px 5px;
+    color: var(--darkGrey);
+
+}
+
+.sidebar-menu >  a{
+    text-decoration: none;
+    font-size: 0.7rem;
+    line-height: 1.5;
+    color: var(--darkGrey);
+}
+.sidebar-menu a:hover {
+    border-right: 2px solid var(--red);
+    color: var(--red);
+}
+.about-us {
+    margin-left: 21%;
+    padding: 5rem 5rem 5rem 5rem;
+    background-color:var(--lightGrey);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 1150px;
+    margin-top: 30px;
+}
+
+.about-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    margin-top: 10%;
+    color: var(--darkBlack);
+    text-align: center;
+}
+
+.about-us p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.services, .working-hours {
+    margin-bottom: 30px;
+}
+
+.services h3, .working-hours h3 {
+    font-size: large;
+    margin-bottom: 15px;
+    color: var(--darkBlack);
+}
+
+.services ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.services ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.services ul li::before {
+    content: "\2022";
+    color: #ff6347;
+    font-weight: bold;
+    display: inline-block;
+    width: 20px;
+    margin-left: -20px;
+}
+#cart {
+    display: none;
+
+}
+
+#cart:checked~.label-cart {
+    color: var(--darkBlack);
+}
+
+#cart:checked~.logo {
+    padding-right: 4px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color:var(--mainColor);
+    color:var(--darkBlack);
+    position: fixed;
+    bottom: 0;
+    width:100%;
+}
